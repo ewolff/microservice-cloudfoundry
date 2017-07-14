@@ -14,13 +14,10 @@ This project creates a complete micro service demo system with Cloud
  Foundry.  The services are implemented in Java using Spring and
  Spring Cloud.
 
-
-
 It uses three microservices:
 - `Order` to process orders.
 - `Customer` to handle customer data.
 - `Catalog` to handle the items in the catalog.
-
 
 Cloud Foundry
 ------------
@@ -50,21 +47,14 @@ Remarks on the Code
 
 The microservices are:
 
-- [microservice-consul-demo-catalog is the application to take care of items.
-- microserivce-consul-demo-customer is responsible for customers.
-- microservice-consul-demo-order does order processing. It uses
-  microservice-demo-catalog and microservice-demo-customer. Ribbon is
-  used for load balancing and Hystrix for resilience.
+- [microservice-cloudfoundry-demo-catalog](microservice-cloudfoundry-demo/microservice-cloudfoundry-demo-catalog)  is the application to take care of items.
+  
+- [microservice-cloudfoundry-demo-customer](microservice-cloudfoundry-demo/microservice-cloudfoundry-demo-customer) is responsible for customers.
 
+-
+  [microservice-cloudfoundry-demo-order does](microservice-cloudfoundry-demo/microservice-cloudfoundry-demo-order) implements
+  order processing. It uses microservice-cloudfoundry-demo-catalog and
+  microservice-cloudfoundry-demo-customer. Hystrix is used for resilience.
 
-The microservices have a Java main application in `src/test/java` to
-run them stand alone. `microservice-demo-order` uses a stub for the
-other services then. Also there are tests that use _consumer-driven
-contracts_. That is why it is ensured that the services provide the
-correct interface. These CDC tests are used in microservice-demo-order
-to verify the stubs. In `microservice-demo-customer` and
-`microserivce-demo-catalog` they are used to verify the implemented
-REST services.
-
-Note that the code has no dependencies on Kubernetes. Only Spring
+Note that the code has no dependencies on Cloud Foundry. Only Spring
 Cloud Hystrix is used to add resilience.
