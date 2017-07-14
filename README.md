@@ -38,7 +38,7 @@ Hystrix dashboard.
 The application assumes that the microservices are accessible with the
 path `local.pcfdev.io` - that is the default for the local Cloud
 Foundry installation. A website to access the microservices is
-deployed at <http://microservices. local.pcfdev.io/>. The website has
+deployed at <http://microservices.local.pcfdev.io/>. The website has
 links to all the microservices.
 
 
