@@ -26,7 +26,7 @@ To use Cloud Foundry you need to install the `cf` command line tool
 first, see <https://docs.cloudfoundry.org/cf-cli/install-go-cli.html>.
 
 Then you need to install Cloud Foundry itself. You can either do a
-local installation as described at <https://pivotal.io/pcf-dev > or
+local installation as described at <https://pivotal.io/pcf-dev> or
 get an account at a public Cloud Foundry
 instance. <https://www.cloudfoundry.org/how-can-i-try-out-cloud-foundry-2016/>
 is a list of public Cloud Foundry provider.
