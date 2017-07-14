@@ -1,0 +1,16 @@
+---
+memory: 750M
+env:
+  JBP_CONFIG_OPEN_JDK_JRE: '[memory_calculator: {memory_heuristics: {metaspace: 128}}]'
+applications:
+- name: catalog
+  path: microservice-cloudfoundry-demo-catalog/target/microservice-cloudfoundry-demo-catalog-0.0.1-SNAPSHOT.jar
+- name: customer
+  path: microservice-cloudfoundry-demo-customer/target/microservice-cloudfoundry-demo-customer-0.0.1-SNAPSHOT.jar
+- name: hystrix-dashboard
+  path: microservice-cloudfoundry-demo-hystrix-dashboard/target/microservice-cloudfoundry-demo-hystrix-dashboard-0.0.1-SNAPSHOT.jar
+- name: order
+  path: microservice-cloudfoundry-demo-order/target/microservice-cloudfoundry-demo-order-0.0.1-SNAPSHOT.jar
+- name: microservices
+  memory: 128M
+  path: microservices  
