@@ -19,28 +19,10 @@ It uses three microservices:
 - `Customer` to handle customer data.
 - `Catalog` to handle the items in the catalog.
 
-Cloud Foundry
+How to run
 ------------
 
-To use Cloud Foundry you need to install the `cf` command line tool
-first, see <https://docs.cloudfoundry.org/cf-cli/install-go-cli.html>.
-
-Then you need to install Cloud Foundry itself. You can either do a
-local installation as described at <https://pivotal.io/pcf-dev> or
-get an account at a public Cloud Foundry
-instance. <https://www.cloudfoundry.org/how-can-i-try-out-cloud-foundry-2016/>
-is a list of public Cloud Foundry provider.
-
-Then a simple `cf push` in the directory
-`microservice-cloudfoundry-demo` will deploy the microservices and the
-Hystrix dashboard.
-
-The application assumes that the microservices are accessible with the
-path `local.pcfdev.io` - that is the default for the local Cloud
-Foundry installation. A website to access the microservices is
-deployed at <http://microservices.local.pcfdev.io/>. The website has
-links to all the microservices.
-
+See [How to run](HOW-TO-RUN.md).
 
 Remarks on the Code
 -------------------
