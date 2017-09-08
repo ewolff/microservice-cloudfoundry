@@ -146,7 +146,7 @@ Stack: cflinuxfs2
 Buildpack: staticfile 1.3.17
 
      state   since                     cpu    memory     disk       details
-#0   aktiv     2017-09-08 01:15:16 PM   0.0%   0 of 128M   0 of 512M
+#0   active     2017-09-08 01:15:16 PM   0.0%   0 of 128M   0 of 512M
 
 ```
 
