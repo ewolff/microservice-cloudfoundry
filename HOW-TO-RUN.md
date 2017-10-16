@@ -105,7 +105,7 @@ server runs in the background.
 
 ## Run the microservices
 
-* Log in to the local Cloud Foundry instance:
+* Log in to the local Cloud Foundry instance. The default Email is `user` and the password is `pass`. The `admin` acoount has the password `admin`.
 
 ```
 [~/microservice-cloudfoundry/microservice-cloudfoundry-demo]cf login -a https://api.local.pcfdev.io --skip-ssl-validation
