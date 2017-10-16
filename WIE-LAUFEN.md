@@ -159,3 +159,11 @@ Die Microservices nehmen an, dass die Microservices unter dem Pfad
 Standardeinstellung einer lokalen Cloud-Foundry-Installation. Unter
 http://microservices.local.pcfdev.io/ ist eine Webseite mit Links zu
 allen Microservices verfügbar.
+
+* Mit `cf dev stop` kannst Du die Cloud-Foundry-Umgebung wieder stoppen:
+
+```
+[~/microservice-cloudfoundry/microservice-cloudfoundry-demo]cf dev stop
+Stopping VM...
+PCF Dev is now stopped.
+```

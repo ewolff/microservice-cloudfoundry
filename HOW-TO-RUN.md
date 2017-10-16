@@ -155,3 +155,11 @@ path `local.pcfdev.io`. That is the default for the local Cloud
 Foundry installation. A website to access the microservices is
 deployed at http://microservices.local.pcfdev.io/ . The website has
 links to all the microservices.
+
+*  `cf dev stop` stops the Cloud Foundry Environment:
+                                                                                                                                                                      
+```                                                                                                                                                                    
+[~/microservice-cloudfoundry/microservice-cloudfoundry-demo]cf dev stop
+Stopping VM...
+PCF Dev is now stopped.
+```
