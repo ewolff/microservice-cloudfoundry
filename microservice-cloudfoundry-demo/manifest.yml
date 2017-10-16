@@ -1,7 +1,10 @@
 ---
 memory: 750M
-env:
-  JBP_CONFIG_OPEN_JDK_JRE: '[memory_calculator: {memory_heuristics: {metaspace: 128}}]'
+env: 
+  JBP_CONFIG_OPEN_JDK_JRE: >
+   [memory_calculator:
+    {memory_heuristics:
+     {metaspace: 128}}]
 applications:
 - name: catalog
   path: microservice-cloudfoundry-demo-catalog/target/microservice-cloudfoundry-demo-catalog-0.0.1-SNAPSHOT.jar
