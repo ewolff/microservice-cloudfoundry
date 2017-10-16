@@ -112,7 +112,7 @@ einfach löschen.
 ## Microservices starten
 
 * Authentifiziere Dich mit den beim Start der Cloud-Foundry-Instanz
-ausgegebenen Benutzerkonto:
+ausgegebenen Benutzerkonto (Email `user` und Passwort `pass`. Der `admin`-Acoount hat das Passwort `admin`.)
 
 ```
 [~/microservice-cloudfoundry/microservice-cloudfoundry-demo]cf login -a https://api.local.pcfdev.io --skip-ssl-validation
