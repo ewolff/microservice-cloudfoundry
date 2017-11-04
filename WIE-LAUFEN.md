@@ -91,6 +91,9 @@ package`. Das wird einige Zeit dauern:
 [INFO] ------------------------------------------------------------------------
 ```
 
+Weitere Information zu Maven gibt es im
+[Maven Cheatsheet](https://github.com/ewolff/cheatsheets-DE/blob/master/MavenCheatSheet.md).
+
 Falls es dabei zu Fehlern kommt:
 
 * Stelle sicher, dass die Datei `settings.xml` im Verzeichnis  `.m2`
