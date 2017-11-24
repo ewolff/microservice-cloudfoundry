@@ -11,10 +11,6 @@ This is a step-by-step guide how to run the example:
    sufficient. After the installation you should be able to execute
    `java` and `javac` on the command line.
 
-* Maven is needed to build the examples. See
-  https://maven.apache.org/download.cgi for installation . You should be
-  able to execute `mvn`on the command line after the installation.
-
 * To use Cloud Foundry you need to install the `cf` command line tool, see https://docs.cloudfoundry.org/cf-cli/install-go-cli.html .
 
 * Then you need to install Cloud Foundry itself. You can either do a
@@ -59,11 +55,12 @@ Regular user => Email: user / Password: pass
 
 ## Build
 
-Change to the directory `microservice-cloudfoundry-demo` and run `mvn clean
-package`. This will take a while:
+Change to the directory `microservice-cloudfoundry-demo` and run
+`./mvnw clean package` or `mvnw.cmd clean package` (Windows). This
+will take a while:
 
 ```
-[~/microservice-cloudfoundry/microservice-cloudfoundry-demo]mvn clean package
+[~/microservice-cloudfoundry/microservice-cloudfoundry-demo]./mvnw clean package
 ...
 [INFO] 
 [INFO] --- maven-jar-plugin:2.6:jar (default-jar) @ microservice-cloudfoundry-demo-order ---
@@ -96,7 +93,8 @@ doubt: delete the file.
 * The tests use some ports on the local machine. Make sure that no
 server runs in the background.
 
-* Skip the tests: `mvn clean package package -Dmaven.test.skip=true`.
+* Skip the tests: `./mvnw clean package -Dmaven.test.skip=true` or
+  `mvnw.cmd clean package -Dmaven.test.skip=true` (Windows).
 
 * In rare cases dependencies might not be downloaded correctly. In
   that case: Remove the directory `repository` in the directory `.m2`

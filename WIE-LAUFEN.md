@@ -13,10 +13,6 @@ Beispiele. Das Beispiel nutzt Cloud Foundry als Ablaufumgebung.
   nicht aus. Nach der Installation sollte sowohl `java` und `javac` in
   der Eingabeaufforderung möglich sein.
 
-* Die Projekte baut Maven. Zur Installation siehe
-  https://maven.apache.org/download.cgi>. Nun sollte `mvn` in der
-  Eingabeaufforderung eingegeben werden können.
-
 * Um Cloud Foundry nutzen zu können, musst du das `cf`
   Kommandozeilenwerkzeug installieren, siehe
   https://docs.cloudfoundry.org/cf-cli/install-go-cli.html .
@@ -63,11 +59,12 @@ Regular user => Email: user / Password: pass
 
 ## Build
 
-Wechsel in das Verzeichnis `microservice-cloudfoundry-demo` und starte `mvn clean
-package`. Das wird einige Zeit dauern:
+Wechsel in das Verzeichnis `microservice-cloudfoundry-demo` und starte
+`./mvnw clean package` bzw. `mvnw.cmd clean package`. Das wird einige
+Zeit dauern:
 
 ```
-[~/microservice-cloudfoundry/microservice-cloudfoundry-demo]mvn clean package
+[~/microservice-cloudfoundry/microservice-cloudfoundry-demo]./mvnw clean package
 ...
 [INFO] 
 [INFO] --- maven-jar-plugin:2.6:jar (default-jar) @ microservice-cloudfoundry-demo-order ---
@@ -104,8 +101,9 @@ einfach löschen.
 * Die Tests nutzen einige Ports auf dem Rechner. Stelle sicher, dass
   im Hintergrund keine Server laufen.
 
-* Führe die Tests beim Build nicht aus: `mvn clean package package
-  -Dmaven.test.skip=true`.
+* Führe die Tests beim Build nicht aus: `./mvnw clean package
+-Dmaven.test.skip=true` bzw `mvnw.cmd clean package
+-Dmaven.test.skip=true`.
 
 * In einigen selten Fällen kann es vorkommen, dass die Abhängigkeiten
   nicht korrekt heruntergeladen werden. Wenn du das Verzeichnis
